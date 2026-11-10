@@ -10,13 +10,27 @@ DSH 的「删除会话」只能归档——文件一个字节都不删。这个�
 
 ## 安装
 
+**方式一：在 DSH 界面里装**
+
+「插件」页 → 右上角 **+ 添加插件** → 输入下面这个地址 → 安装
+
+```
+https://github.com/695132071/dsh-session-reaper
+```
+
+**方式二：命令行**
+
 ```powershell
 dsh plugin --profile desktop add https://codeload.github.com/695132071/dsh-session-reaper/tar.gz/refs/heads/main
 ```
 
-`desktop` 换成你自己的 profile 名。装完**完整退出 DSH 再启动**（桌面版连托盘一起退）。
+`desktop` 换成你自己的 profile 名。
+
+装完**完整退出 DSH 再启动**（桌面版连托盘一起退）。
 
 要求 DSH ≥ 0.2.1-rc.2。
+
+> 界面里的「安装源」只对 npm 包名生效。填 GitHub 地址是直连，不走它，所以选官方源还是国内镜像都一样。
 
 ## 使用
 
