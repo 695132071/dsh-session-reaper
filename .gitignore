@@ -1,0 +1,14 @@
+# 依赖（本插件零运行时依赖，这个只是兜底）
+node_modules/
+
+# 打包产物：用 `pnpm pack` 重新生成，不入库
+*.tgz
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log

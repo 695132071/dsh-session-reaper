@@ -1,0 +1,44 @@
+{
+  "name": "dsh-session-reaper",
+  "version": "0.2.14",
+  "description": "DSH 会话终极清理：侧边栏右键直接永久删除会话及其全部落盘数据（目录 / 投影缓存 / 工作区账本 / 索引），带二次确认、运行中保护、软链接处理、孤儿扫描与批量清理。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "dshTarget": "0.2.1-rc.2",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "delete",
+    "purge",
+    "cleanup"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# dsh-session-reaper bundle patch: one server-side row brings the reaper
+# service (delete API + orphan scan) into the profile; its client half mounts
+# the sidebar menu item and the cleanup panel through slot registrations.
+- insert:
+    - id: dsh-session-reaper
+      name: dsh-session-reaper
